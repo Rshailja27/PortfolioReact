@@ -1,0 +1,51 @@
+.projects{
+    width: 100vw;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #f1efef;
+}
+  .all-projects{
+    margin: 0 auto;
+    width: 86%;
+    display: grid;
+  grid-template-columns: auto auto auto;
+  }
+.card {
+    border: 1px solid #00e6b8;
+    border-radius: 8px;
+    height: 460px;
+    width: 360px;
+    background-color: #fff;
+  }
+  
+  .card-content { 
+    margin-top: -1.6rem;
+    width: 100%;
+    height: 97%;
+    font-size: 18px;
+    font-weight: 700;
+    opacity: 0.8;
+  }
+  .card-content img{
+    border-radius: 44px;
+  } 
+  .card-footer {
+    width: 100%;
+    border-top: 1px solid #00e6b8;
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 0.8;
+  }
+  
+.card:hover {
+  transform: scale(1.04); /* Scale up by 5% */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow for a more pronounced effect */
+}
+
+/* dark mode css */
+
+.dark {
+    background-color: #1a1a1a;
+    color: white;
+  }
