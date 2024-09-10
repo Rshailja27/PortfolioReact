@@ -1,5 +1,5 @@
-import React from 'react'
-import reactLogo from '/dark_logo.png'
+import React from 'react';
+import reactLogo from '/dark_logo.png';
 import CustomizedSwitch from './Switch'
 import './Navbar.css'
 
@@ -9,26 +9,26 @@ function Navbar({ handleThemeChange, themeMode }) {
       };
 
   return (
-    <div>
+    
+    <div id='home' className={`nav ${themeMode}`}>
       <ul>
-        <li>
+        <li className='nav-links'>
             <a href="https://react.dev" target="_blank">
                 <img src={reactLogo} className="logo_react" alt="React logo"/>
             </a>
         </li>
-        <li><a className="active" href="#home">Home</a></li>
-        <li><a href="#aboutme">About Me</a></li>
-        <li><a href="#skils">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li className='nav-links'><a href="#home">Home</a></li>
+        <li className='nav-links'><a href="#aboutme">About Me</a></li>
+        <li className='nav-links'><a href="#skills">Skills</a></li>
+        <li className='nav-links'><a href="#projects">Projects</a></li>
+        <li className='nav-links'><a href="#contactme">Contact</a></li>
         <li className="theme-switch">
-            <CustomizedSwitch  
-            checked={themeMode === 'dark'}
-            onChange={handleSwitchChange}  />
+        <CustomizedSwitch themeMode={themeMode} handleSwitchChange={handleSwitchChange} />
         </li>
         </ul>
     </div>
+    
   )
 }
 
-export default Navbar
+export default Navbar;

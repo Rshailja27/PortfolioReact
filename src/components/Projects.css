@@ -31,7 +31,7 @@ background-color: #f1efef;
     border-radius: 44px;
   } 
   .card-footer {
-    width: 100%;
+    margin: 0 -2rem;
     border-top: 1px solid #00e6b8;
     font-size: 20px;
     font-weight: 700;
@@ -42,10 +42,37 @@ background-color: #f1efef;
   transform: scale(1.04); /* Scale up by 5% */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow for a more pronounced effect */
 }
+.projects-btn{ 
+    display: flex;
+ align-items: center; 
+ justify-content: center; 
+ color:#000;
+ padding:13px 18px;
+ border-radius:8px;
+ border:1px solid black;
+ font-weight:700;
+  margin-top:3.5rem;
+  font-size:18px;
+}
+.projects-btn:hover {
+   background-color: #000;
+   color: #fff;
+   border:1px solid #646cff;
+ }
 
 /* dark mode css */
 
 .dark {
     background-color: #1a1a1a;
     color: white;
+  }
+
+  .dark .projects-btn {
+    background-color: white;
+    color:#1a1a1a;
+  }
+  .dark .projects-btn:hover {
+    background-color: #0a0a0a;
+    color: white;
+    border:1px solid #646cff;
   }

@@ -3,7 +3,7 @@ import './AboutMe.css';
 
 function AboutMe({ themeMode }) {
   return (
-    <div className={`Aboutme ${themeMode}`}>
+    <div id='aboutme' className={`Aboutme ${themeMode}`}>
        <div className="heading"> 
             <div className="h1"><h1 style={{fontSize:'2rem'}}>ABOUT ME</h1></div> 
             <div className='underline'></div>

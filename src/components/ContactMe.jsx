@@ -3,7 +3,7 @@ import './ContactMe.css'; // Ensure this path is correct for your project
 
 function ContactMe({ themeMode }) {
   return (
-    <div className={`contact-me ${ themeMode }`}>
+    <div id='contactme' className={`contact-me ${ themeMode }`}>
       <div className="heading">
         <div className="h1">
           <h1 style={{ fontSize: '2rem' }}>Contact Me</h1>

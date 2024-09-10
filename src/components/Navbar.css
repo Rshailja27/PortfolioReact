@@ -1,11 +1,16 @@
-ul {
-    position: sticky;
-    width: 100vw;
-    list-style-type: none;
-    margin: 0;
-    padding: 0 6rem;
-    z-index: 1000;
-    border-bottom: 1px solid hsl(180, 96%, 50%);
+.nav{
+  top: 0;
+  position: sticky;
+  margin-top: -1rem;
+  width: 100vw; 
+  height: 10vh;
+  padding: 0 6rem;
+  border-bottom: 1px solid rgb(3, 255, 255);
+  background-color: #fff;
+  z-index: 1000;
+}
+ul {  
+    list-style-type: none;  
   }
   
   li {
@@ -13,21 +18,26 @@ ul {
   }
   
   li a {
-    margin-top: 0.5rem;
     display: block;
-    color: #666;
+    color: #4e4e4e;
     text-align: center;
-    padding: 14px 12px;
+    padding: 0 12px;
     text-decoration: none;
   }
+  .nav-links{
+    padding-top: 18px;
+  }
+  
   .logo_react{
     width: 32px;
     height:32px;
     border-radius: 50%;
   }
   .theme-switch{
+    margin-top: 1rem;
     float: right;
   }
-  .active {
-    color: #0a0a0a;
+  /* dark theme */
+  .dark li a{
+    color: #ccc;
   }

@@ -1,8 +1,8 @@
 // src/components/Footer.js
 import React from 'react';
 import styled from 'styled-components';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import JoinInnerIcon from '@mui/icons-material/JoinInner';
+import { Icon } from "@iconify/react";
+
 
 const FooterContainer = styled.footer`
   background-color:  #00e6b8;
@@ -15,12 +15,8 @@ const FooterContainer = styled.footer`
 function Footer({themeMode}) {
   return (
     <FooterContainer>
-      <GitHubIcon sx={{mr:2,fontSize:'2.5rem','&:hover': {
-          color: '#fff',
-        }, }}/>
-      <JoinInnerIcon sx={{ml:2,fontSize:'2.5rem','&:hover': {
-          color: '#fff',
-        },}}/>
+       <Icon icon="icomoon-free:github" style={{fontSize:'3rem'}} />
+       <Icon icon="ph:link-bold" style={{fontSize:'3rem',marginLeft:'3rem'}}/> 
     </FooterContainer>
   );
 }
