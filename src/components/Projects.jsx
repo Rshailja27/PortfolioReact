@@ -5,9 +5,9 @@ import './Projects.css';
 
 function Projects({ themeMode }) {
   const projects = [
-    { imageSrc: './card-image.PNG', projectName: '360imagedisplay' },
-    { imageSrc: './card-image.PNG', projectName: 'amzo-android' },
-    { imageSrc: './card-image.PNG', projectName: 'amzo-android-api' }
+    { projectName: '360imagedisplay' },
+    { projectName: 'amzo-android' },
+    { projectName: 'amzo-android-api' }
   ];
 
   return (
@@ -21,7 +21,6 @@ function Projects({ themeMode }) {
         {projects.map((project, index) => (
           <ProjectCard
             key={index}
-            imageSrc={project.imageSrc}
             projectName={project.projectName}
             themeMode={themeMode}
           />

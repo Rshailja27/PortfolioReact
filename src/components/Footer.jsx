@@ -12,11 +12,11 @@ const FooterContainer = styled.footer`
   opacity: 0.8;
 `;
 
-function Footer({themeMode}) {
+function Footer() {
   return (
     <FooterContainer>
-       <Icon icon="icomoon-free:github" style={{fontSize:'3rem'}} />
-       <Icon icon="ph:link-bold" style={{fontSize:'3rem',marginLeft:'3rem'}}/> 
+       <Icon icon="icomoon-free:github" style={{fontSize:'2.6rem'}} />
+       <Icon icon="ph:link-bold" style={{fontSize:'2.6rem',marginLeft:'3rem'}}/> 
     </FooterContainer>
   );
 }

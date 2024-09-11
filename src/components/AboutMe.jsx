@@ -1,4 +1,5 @@
 import React from 'react';
+import BackToTop from './ScrollTopToBottom';
 import './AboutMe.css';
 
 function AboutMe({ themeMode }) {
@@ -17,6 +18,7 @@ function AboutMe({ themeMode }) {
             <div className="info-image">
                 <img src="https://avatars.githubusercontent.com/u/46315553?v=4" alt="abt" className='user-content' />
             </div>
+<BackToTop themeMode = { themeMode }/>
        </div>
       
     </div>

@@ -6,7 +6,7 @@ import './Home.css';
 function Home({ themeMode }) {
   return (
     
-       <div className={`home ${themeMode}`}>
+       <div id='home' className={`home ${themeMode}`}>
           <div className='links'>
             <div className='links-icons'>
             <Icon icon="icomoon-free:github" style={{fontSize:'3.5rem',opacity: 0.8}} />

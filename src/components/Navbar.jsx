@@ -10,14 +10,14 @@ function Navbar({ handleThemeChange, themeMode }) {
 
   return (
     
-    <div id='home' className={`nav ${themeMode}`}>
+    <div className={`nav ${themeMode}`}>
       <ul>
         <li className='nav-links'>
             <a href="https://react.dev" target="_blank">
                 <img src={reactLogo} className="logo_react" alt="React logo"/>
             </a>
         </li>
-        <li className='nav-links'><a href="#home">Home</a></li>
+        <li className={`nav-links active ${themeMode}`}><a href="#home">Home</a></li>
         <li className='nav-links'><a href="#aboutme">About Me</a></li>
         <li className='nav-links'><a href="#skills">Skills</a></li>
         <li className='nav-links'><a href="#projects">Projects</a></li>

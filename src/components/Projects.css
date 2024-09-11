@@ -3,7 +3,7 @@
 display: flex;
 flex-direction: column;
 align-items: center;
-background-color: #f1efef;
+background-color: #f5f3e8;
 }
   .all-projects{
     margin: 0 auto;
@@ -11,37 +11,78 @@ background-color: #f1efef;
     display: grid;
   grid-template-columns: auto auto auto;
   }
+/* Card Container */
 .card {
-    border: 1px solid #00e6b8;
-    border-radius: 8px;
-    height: 460px;
-    width: 360px;
-    background-color: #fff;
-  }
-  
-  .card-content { 
-    margin-top: -1.6rem;
-    width: 100%;
-    height: 97%;
-    font-size: 18px;
-    font-weight: 700;
-    opacity: 0.8;
-  }
-  .card-content img{
-    border-radius: 44px;
-  } 
-  .card-footer {
-    margin: 0 -2rem;
-    border-top: 1px solid #00e6b8;
-    font-size: 20px;
-    font-weight: 700;
-    opacity: 0.8;
-  }
-  
-.card:hover {
-  transform: scale(1.04); /* Scale up by 5% */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow for a more pronounced effect */
+  border: 1px solid #00e6b8;
+  border-radius: 8px;
+  height: 446px;
+  width: 360px;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+  box-shadow: 0 1px 10px rgba(9, 236, 214, 0.2);
 }
+
+/* Card Content */
+.card-content {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SVG Styling */
+.card-content img {
+  margin-top: -1.7rem;
+  width: 75%;
+  height: auto;
+  max-height: 270px;
+}
+
+/* Card Footer */
+.card-footer {
+  margin: 0 -2rem -2rem -2rem;
+  border-top: 1px solid #00e6b8;
+  font-size: 20px;
+  padding: 0.7rem 0;
+}
+.card-footer a{
+  color: #4e4e4e;
+  font-weight: 500;
+}
+
+/* Hover Effect */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 1px 10px rgba(0, 238, 215, 0.2);
+}
+.card-footer a:hover{
+  color: #17b898;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-content {
+    font-size: 16px;
+  }
+
+  .card-footer {
+    font-size: 16px;
+  }
+}
+
 .projects-btn{ 
     display: flex;
  align-items: center; 
@@ -66,6 +107,15 @@ background-color: #f1efef;
     background-color: #1a1a1a;
     color: white;
   }
+.dark .card, .dark .card-content {
+  background-color: rgb(148, 147, 147);
+}
+.dark .card-footer a{
+  color: white;
+}
+.dark .card-footer a:hover{
+  color: #17b898;
+}
 
   .dark .projects-btn {
     background-color: white;
