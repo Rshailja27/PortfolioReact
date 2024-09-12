@@ -21,6 +21,7 @@ export default function App() {
     <>
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      {/* <Navbar handleThemeChange={handleThemeChange} themeMode={themeMode}/> */}
       <PortfolioPage handleThemeChange={handleThemeChange} themeMode={themeMode} />
     </ThemeProvider>        
       

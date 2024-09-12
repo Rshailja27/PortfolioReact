@@ -17,16 +17,13 @@ ul {
     float: left;
   }
   
-  .nav-links {
+  li a {
     display: block;
+    color: #4e4e4e;
     text-align: center;
     padding: 0 12px;
     text-decoration: none;
   }
-  li a,
-  li a:hover {
-    color: #4e4e4e;
-    }
   .nav-links{
     padding-top: 18px;
   }
@@ -40,15 +37,7 @@ ul {
     margin-top: 1rem;
     float: right;
   }
-  .active{
-    color: #080808;
-    font-weight: 500;
-  }
   /* dark theme */
   .dark li a{
-    color: #d3cfcf;
-  }
-  .dark .active{
-    color: #fff;
-    font-weight: 500;
+    color: #ccc;
   }
