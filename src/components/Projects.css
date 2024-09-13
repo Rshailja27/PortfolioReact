@@ -115,7 +115,7 @@ background-color: #f5f3e8;
 
   /* For tablets and small screens (max-width: 768px) */
 
-  @media (max-width: 768px){
+  @media (max-width: 800px){
     .all-projects {
       grid-template-columns: auto auto; /* 2 columns layout */
   }
@@ -127,7 +127,7 @@ background-color: #f5f3e8;
 
 /* For mobile screens (max-width: 480px) */
 
-  @media (max-width: 480px){
+  @media (max-width: 500px){
     .all-projects {
       grid-template-columns: 1fr;
   }
