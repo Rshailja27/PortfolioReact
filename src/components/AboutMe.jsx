@@ -6,7 +6,7 @@ function AboutMe({ themeMode }) {
   return (
     <div id='aboutme' className={`Aboutme ${themeMode}`}>
        <div className="heading"> 
-            <div className="h1"><h1 style={{fontSize:'2rem'}}>ABOUT ME</h1></div> 
+            <h1>ABOUT ME</h1> 
             <div className='underline'></div>
         </div>
        <div className="details">
@@ -18,7 +18,7 @@ function AboutMe({ themeMode }) {
             <div className="info-image">
                 <img src="https://avatars.githubusercontent.com/u/46315553?v=4" alt="abt" className='user-content' />
             </div>
-<BackToTop themeMode = { themeMode }/>
+{/* <BackToTop themeMode = { themeMode }/> */}
        </div>
       
     </div>

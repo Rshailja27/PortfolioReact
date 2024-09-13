@@ -13,7 +13,7 @@ function Projects({ themeMode }) {
   return (
     <div id='projects' className={`projects ${themeMode}`}>
       <div className="heading">
-        <div className="h1"><h1 style={{ fontSize: '2rem' }}>Projects</h1></div>
+        <div className="h1"><h1>Projects</h1></div>
         <div className='underline'></div>
       </div>
 

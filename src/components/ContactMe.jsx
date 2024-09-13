@@ -6,7 +6,7 @@ function ContactMe({ themeMode }) {
     <div id='contactme' className={`contact-me ${ themeMode }`}>
       <div className="heading">
         <div className="h1">
-          <h1 style={{ fontSize: '2rem' }}>Contact Me</h1>
+          <h1>Contact Me</h1>
         </div>
         <div className='underline'></div>
       </div>

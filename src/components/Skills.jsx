@@ -24,7 +24,7 @@ function Skills({ themeMode }) {
   return (
     <div id='skills' className={`skills ${ themeMode }`}>
       <div className="heading"> 
-            <div className="h1"><h1 style={{fontSize:'2rem'}}>Skills</h1></div> 
+            <div className="h1"><h1>Skills</h1></div> 
             <div className='underline'></div>
         </div>
        <div className="laguages">

@@ -44,7 +44,7 @@ function Navbar({ handleThemeChange, themeMode }) {
   const iconColor = themeMode === 'dark' ? '#fff' : '#212121';
 
   return (
-    <AppBar position="sticky" sx={{ ...appBarStyle, width: '100vw', boxShadow: 'none', padding: '0 8rem' }}>
+    <AppBar position="sticky" sx={{ ...appBarStyle, width: '100vw', boxShadow: 'none', padding: '0 6rem' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>        
           <Typography sx={{ 
@@ -106,7 +106,7 @@ function Navbar({ handleThemeChange, themeMode }) {
               >
                 <a 
                   href={optionsId[index]} 
-                  style={{ color: 'inherit', textDecoration: 'none', fontWeight:'600' }}
+                  style={{ color: 'inherit', textDecoration: 'none', textTransform: 'capitalize' }}
                 >
                   {option}
                 </a>
