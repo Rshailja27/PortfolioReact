@@ -41,7 +41,7 @@ background-color: #f5f3e8;
 }
 
 /* SVG Styling */
-.card-content img {
+.card img {
   margin-top: -1.7rem;
   width: 75%;
   height: auto;

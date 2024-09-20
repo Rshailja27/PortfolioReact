@@ -8,11 +8,11 @@
   }
   
   .home.light {
-    background-image: url("hero-light.jpg"); /* Update path as needed */
+    background-image: url("/hero-light.jpg"); /* Update path as needed */
   }
   
   .home.dark {
-    background-image: url("hero-dark.jpg"); /* Update path as needed */
+    background-image: url("/hero-dark.jpg"); /* Update path as needed */
   }
   .react-anim{
     animation: rotate 25s linear infinite;
